@@ -13,3 +13,5 @@ RoxygenNote: 7.2.0
 Imports: 
     httr,
     stringi
+URL: https://github.com/ciga-mpmg/aecomLogin
+BugReports: https://github.com/ciga-mpmg/aecomLogin/issues
