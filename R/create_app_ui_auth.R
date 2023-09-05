@@ -7,7 +7,7 @@
 create_app_ui_auth <- function(request, ui, prod = FALSE) {
 
   function(request){
-    pass <- aecomLogin:::validate_session(request, prod)
+    pass <- aecomLogin:::validate_session(request, prod = prod)
 
     if(prod){
       replace_js <- 'location.replace("https://painel.ciga-mpmg.com.br");'
