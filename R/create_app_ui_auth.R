@@ -14,7 +14,7 @@ create_app_ui_auth <- function(request, ui, url, validation_endpoint) {
     if (pass == "true") {
       ui()
     } else {
-      shiny::tags$script(shiny::HTML(url))
+      shiny::tags$script(shiny::HTML(glue::glue("location.replace('{url}');")))
     }
   }
 }
