@@ -6,7 +6,7 @@
 #' @noRd
 create_app_ui_auth <- function(request, ui, url, validation_endpoint) {
   function(request) {
-    pass <- aecomLogin:::validate_session(
+    pass <- painelLogin:::validate_session(
       request,
       validation_endpoint = validation_endpoint
     )
